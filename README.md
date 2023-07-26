@@ -1,2 +1,5 @@
 # SuperLearner-MOOC-dropout
-MOOC XuetangX dropout prediction using Stacking Super Learner Ensemble
+
+This is the code for my undergraduate thesis which built MOOC dropout prediction modeling using the most recent stacking ensemble technique called Super Learner. Inside Super Learner, there are SVM, Logistic Regression, KNN, Naive Bayes, Random Forest, and XGBoost as base learners. Then, the meta-learner of Super Learner will form an optimally weighted combination of base learners. In this case, "optimal" is defined through NNloglik (non-negative binomial likelihood maximization) or AUC-maxim (AUC maximization). Additionally, this machine learning model was also built using GPU in an HPC NVIDIA environment to gain computational speedups.
+
+The result showed that the Super Learner model surpassed the F1 score of its base learners. Moreover, the Super Learner was also superior to Stacked Generalization, which is the earliest stacking technique. 
